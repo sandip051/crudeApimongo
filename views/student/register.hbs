@@ -1,0 +1,46 @@
+<head>
+    <script type="text/javascript" src="/js/add.js"></script>
+</head>
+<div class="container">
+<div class="row" class="col-sm-3">
+            <div class="col-sm-6">
+            <form action="student/data" method="post">
+            <div class="form-group">
+                <label>First Name</label>
+                 <input type="hidden" class="form-control" id="id"  name="id" >
+                <input type="text" class="form-control" id="student_name"  name="student_name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" class="form-control" id="student_last" name="student_last"  placeholder="last name">
+                </div>
+                <div class="form-group">
+                <label>city Name</label>
+                <input type="text" class="form-control" id="student_city" name="student_city" placeholder="city name">
+                </div>
+                <button type="submit" class="btn btn-primary" id="addData">save</button>
+                 <button type="button" class="btn btn-primary" id="Update"
+                                        style="display: none;">Update</button>
+                </form>
+                </div>
+       
+</div>
+<button  class="getData" >Get</button>
+ <table class="table" id="location">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        
+                        <th>city</th>
+
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tdata">
+                </tbody>
+            </table>
+
+</div>
+
